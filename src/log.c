@@ -2,8 +2,8 @@
 #include <stdarg.h>
 #include <time.h>
 
-#include "nwlib/log.h"
-#include "nwlib/ansi_colors.h"
+#include "nwbase/log.h"
+#include "nwbase/ansi_colors.h"
 
 static const char* _level_color(LogLevel level)
 {
