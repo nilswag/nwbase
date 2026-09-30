@@ -21,5 +21,16 @@
       "name": "release",
       "configurePreset": "release"
     }
+  ],
+  "testPresets": [
+    {
+      "name": "debug",
+      "configurePreset": "debug",
+      "configuration": "Debug",
+      "output": {
+        "outputOnFailure": true,
+        "verbosity": "verbose"
+      }
+    }
   ]
 }

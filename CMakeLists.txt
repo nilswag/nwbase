@@ -19,3 +19,9 @@ target_include_directories(${PROJECT_NAME}
 target_compile_definitions(${PROJECT_NAME}
 	PRIVATE $<$<CONFIG:Debug>:_DEBUG>
 )
+
+include(CTest)
+
+if (BUILD_TESTING)
+	add_subdirectory(tests)
+endif()
