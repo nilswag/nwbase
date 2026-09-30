@@ -16,4 +16,8 @@ typedef uint64_t u64;
 typedef float    f32;
 typedef double   f64;
 
+/**
+ * Utility macro for wrapping multiple statements into one
+ * @param x The statement(s) to be wrapped
+ */
 #define STMT(x) do { x } while (0)
