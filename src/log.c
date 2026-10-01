@@ -9,12 +9,12 @@ static const char* _level_color(LogLevel level)
 {
 	switch (level)
 	{
-		case LOG_LEVEL_TRACE: return COLOR_BLUE;
-		case LOG_LEVEL_DEBUG: return COLOR_CYAN;
+		case LOG_LEVEL_TRACE: return COLOR_CYAN;
+		case LOG_LEVEL_DEBUG: return COLOR_LIGHT_CYAN;
 		case LOG_LEVEL_INFO:  return COLOR_GREEN;
 		case LOG_LEVEL_WARN:  return COLOR_YELLOW;
-		case LOG_LEVEL_ERROR: return COLOR_RED;
-		case LOG_LEVEL_FATAL: return COLOR_BOLD_RED;
+		case LOG_LEVEL_ERROR: return COLOR_LIGHT_RED;
+		case LOG_LEVEL_FATAL: return COLOR_RED;
 		default:
 			break;
 	}
