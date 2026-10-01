@@ -1,4 +1,5 @@
 #pragma once
+#include <stdlib.h>
 
 #include "defines.h"
 #include "util.h"
@@ -61,4 +62,4 @@ void log(LogLevel level,
  * Log fatal 
  * @param ... Variadic arguments 
  */
-#define FATAL(...) STMT( log(LOG_LEVEL_FATAL, __FILENAME__, __LINE__, __VA_ARGS__); abort(); )
+#define FATAL(...) STMT( log(LOG_LEVEL_FATAL, __FILENAME__, __LINE__, __VA_ARGS__); exit(-1); )
