@@ -12,3 +12,5 @@
  */
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 #endif
+
+char** split(char* str, const char* delimiter, size_t* count);

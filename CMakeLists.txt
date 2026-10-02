@@ -3,6 +3,7 @@ project(nwbase C)
 
 set(SOURCES 
 	src/log.c
+	src/util.c
 )
 
 add_library(${PROJECT_NAME} ${SOURCES})
